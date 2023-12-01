@@ -26,12 +26,14 @@ html {
 body {
   margin: 0;
   line-height: inherit;
+  
 }
 
 hr {
   height: 0;
   color: inherit;
   border-top-width: 1px;
+  
 }
 
 abbr:where([title]) {
@@ -256,11 +258,10 @@ textarea {
     align-items: start;
     justify-content: center;
     background-color: var(--black-900);
-    background-image: url('https://archive.org/download/main-bg_202311/main-bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
- 
+    background-image: url('https://archive.org/download/main-bg_202311/main-bg.png');
 }
 
 .mycontainer {
@@ -279,6 +280,7 @@ textarea {
     padding-top: 7rem /* 112px */;
     padding-bottom: 7rem /* 112px */;
     margin-bottom: 15%;
+    
     
 }
 
