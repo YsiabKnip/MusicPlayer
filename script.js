@@ -484,13 +484,5 @@ onDocumentReady(async () => {
     relatedArtistBtn.addEventListener('click', relatedArtistCB);
 });
 
-const volumeControl = wrapper.querySelector("#volume-control");
 
-mainAudio.volume = 1.0;
-
-// Update volume when volume control changes
-volumeControl.addEventListener("input", () => {
-  const volumeValue = volumeControl.value / 100; // Convert range 0-100 to 0-1
-  mainAudio.volume = volumeValue;
-});
 
