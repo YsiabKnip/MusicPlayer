@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.9/dist/css/splide.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="main">
+    <div class="mycontainer">
+        <section class="music-app">
+            <div class="cover">
+                <img
+                    class="cover-image"
+                    src="https://archive.org/download/cover-image_202312/cover-image.png"
+                    alt=""
+                />
+            </div>
+
+            <div class="song">
+                <span class="song-title">Unknown song</span>
+                <a class="song-artist" href="#" target="_blank">Unknown artist</a>
+            </div>
+
+            <div class="player">
+                <div class="player-status">
+                    <div class="player-status-time">
+                        <span class="player-status-time-start" data-song-duration-left
+                            >00:00</span
+                        >
+                        <span class="player-status-time-end" data-song-duration-right
+                            >00:00</span
+                        >
+                    </div>
+
+                    <div class="player-status-progress">
+                        <input
+                            class="player-status-progress-range"
+                            type="range"
+                            name="progress"
+                            id="progress"
+                            value="0"
+                        />
+                    </div>
+                </div>
+                <div class="player-action">
+                    <span class="player-action-prev" role="button">
+                        <svg
+                            width="82"
+                            height="83"
+                            viewBox="0 0 82 83"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g filter="url(#filter0_d_2_37)">
+                                <path
+                                    d="M26.7633 40.0035C24.7633 38.8488 24.7633 35.9621 26.7633 34.8074L57.3715 17.1358C59.3715 15.981 61.8715 17.4244 61.8715 19.7338L61.8715 55.0771C61.8715 57.3865 59.3715 58.8299 57.3715 57.6752L26.7633 40.0035Z"
+                                    fill-opacity="1"
+                                />
+                                <rect
+                                    x="25.2811"
+                                    y="58.5298"
+                                    width="5.28109"
+                                    height="42.2487"
+                                    transform="rotate(-180 25.2811 58.5298)"
+                                    fill-opacity="1"
+                                />
+                            </g>
+                            <defs>
+                                <filter
+                                    id="filter0_d_2_37"
+                                    x="0"
+                                    y="0.281097"
+                                    width="81.8715"
+                                    height="82.2487"
+                                    filterUnits="userSpaceOnUse"
+                                    color-interpolation-filters="sRGB"
+                                >
+                                    <feFlood
+                                        flood-opacity="0"
+                                        result="BackgroundImageFix"
+                                    />
+                                    <feColorMatrix
+                                        in="SourceAlpha"
+                                        type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                        result="hardAlpha"
+                                    />
+                                    <feOffset dy="4" />
+                                    <feGaussianBlur stdDeviation="10" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix
+                                        type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                                    />
+                                    <feBlend
+                                        mode="normal"
+                                        in2="BackgroundImageFix"
+                                        result="effect1_dropShadow_2_37"
+                                    />
+                                    <feBlend
+                                        mode="normal"
+                                        in="SourceGraphic"
+                                        in2="effect1_dropShadow_2_37"
+                                        result="shape"
+                                    />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </span>
+                    
+                    <span class="player-action-play" role="button">
+                        <svg
+                            width="170"
+                            height="170"
+                            viewBox="0 0 170 170"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g filter="url(#filter0_d_2_32)">
+                                <circle
+                                    cx="85"
+                                    cy="75"
+                                    r="60"
+                                    fill="url(#paint0_linear_2_32)"
+                                />
+                            </g>
+                            <g filter="url(#filter1_i_2_32)">
+                                <path
+                                    d="M110.5 72.4019C112.5 73.5566 112.5 76.4434 110.5 77.5981L74.5 98.3827C72.5 99.5374 70 98.094 70 95.7846L70 54.2154C70 51.906 72.5 50.4626 74.5 51.6173L110.5 72.4019Z"
+                                    fill="#D9D9D9"
+                                />
+                            </g>
+                            <defs>
+                                <filter
+                                    id="filter0_d_2_32"
+                                    x="0"
+                                    y="0"
+                                    width="170"
+                                    height="170"
+                                    filterUnits="userSpaceOnUse"
+                                    color-interpolation-filters="sRGB"
+                                >
+                                    <feFlood
+                                        flood-opacity="0"
+                                        result="BackgroundImageFix"
+                                    />
+                                    <feColorMatrix
+                                        in="SourceAlpha"
+                                        type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                        result="hardAlpha"
+                                    />
+                                    <feOffset dy="10" />
+                                    <feGaussianBlur stdDeviation="12.5" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix
+                                        type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                                    />
+                                    <feBlend
+                                        mode="normal"
+                                        in2="BackgroundImageFix"
+                                        result="effect1_dropShadow_2_32"
+                                    />
+                                    <feBlend
+                                        mode="normal"
+                                        in="SourceGraphic"
+                                        in2="effect1_dropShadow_2_32"
+                                        result="shape"
+                                    />
+                                </filter>
+                                <filter
+                                    id="filter1_i_2_32"
+                                    x="70"
+                                    y="51.2109"
+                                    width="42"
+                                    height="51.5782"
+                                    filterUnits="userSpaceOnUse"
+                                    color-interpolation-filters="sRGB"
+                                >
+                                    <feFlood
+                                        flood-opacity="0"
+                                        result="BackgroundImageFix"
+                                    />
+                                    <feBlend
+                                        mode="normal"
+                                        in="SourceGraphic"
+                                        in2="BackgroundImageFix"
+                                        result="shape"
+                                    />
+                                    <feColorMatrix
+                                        in="SourceAlpha"
+                                        type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                        result="hardAlpha"
+                                    />
+                                    <feOffset dy="4" />
+                                    <feGaussianBlur stdDeviation="5" />
+                                    <feComposite
+                                        in2="hardAlpha"
+                                        operator="arithmetic"
+                                        k2="-1"
+                                        k3="1"
+                                    />
+                                    <feColorMatrix
+                                        type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                                    />
+                                    <feBlend
+                                        mode="normal"
+                                        in2="shape"
+                                        result="effect1_innerShadow_2_32"
+                                    />
+                                </filter>
+                                <linearGradient
+                                    id="paint0_linear_2_32"
+                                    x1="85"
+                                    y1="15"
+                                    x2="85"
+                                    y2="135"
+                                    gradientUnits="userSpaceOnUse"
+                                >
+                                    <stop stop-color="#96385A" />
+                                    <stop offset="1" stop-color="#66255D" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </span>
+                   
+                    <span class="player-action-next" role="button">
+                        <svg
+                            width="83"
+                            height="83"
+                            viewBox="0 0 83 83"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g filter="url(#filter0_d_2_36)">
+                                <path
+                                    d="M55.3109 34.8074C57.3109 35.9621 57.3109 38.8488 55.3109 40.0035L24.7027 57.6752C22.7027 58.8299 20.2027 57.3865 20.2027 55.0771L20.2027 19.7338C20.2027 17.4244 22.7027 15.9811 24.7027 17.1358L55.3109 34.8074Z"
+                                    fill-opacity="1"
+                                />
+                                <rect
+                                    x="56.7931"
+                                    y="16.2811"
+                                    width="5.28109"
+                                    height="42.2487"
+                                    fill-opacity="1"
+                                />
+                            </g>
+                            <defs>
+                                <filter
+                                    id="filter0_d_2_36"
+                                    x="0.202698"
+                                    y="0.281128"
+                                    width="81.8715"
+                                    height="82.2487"
+                                    filterUnits="userSpaceOnUse"
+                                    color-interpolation-filters="sRGB"
+                                >
+                                    <feFlood
+                                        flood-opacity="0"
+                                        result="BackgroundImageFix"
+                                    />
+                                    <feColorMatrix
+                                        in="SourceAlpha"
+                                        type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                        result="hardAlpha"
+                                    />
+                                    <feOffset dy="4" />
+                                    <feGaussianBlur stdDeviation="10" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix
+                                        type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                                    />
+                                    <feBlend
+                                        mode="normal"
+                                        in2="BackgroundImageFix"
+                                        result="effect1_dropShadow_2_36"
+                                    />
+                                    <feBlend
+                                        mode="normal"
+                                        in="SourceGraphic"
+                                        in2="effect1_dropShadow_2_36"
+                                        result="shape"
+                                    />
+                                </filter>
+                            </defs>
+                        </svg> 
+                    </span>
+                </div>
+            </div>
+            <!-- <div id="volume-control">
+                <input type="range" id="volume-control" class="volume-control" min="0" max="100" step="1" value="100"> 
+            </div> -->
+            
+        </section>
+
+        <section class="meta">
+            <span class="meta-explore">Explore</span>
+
+            <nav class="meta-navbar">
+                <ul class="meta-navbar-nav">
+                    <li>
+                        <button class="nav-btn" data-nav-btn="lyrics">Lyrics</button>
+                    </li>
+
+                    <li>
+                        <button class="nav-btn" data-nav-btn="other-albums">Other Albums</button>
+                    </li>
+
+                    <li>
+                        <button class="nav-btn" data-nav-btn="related-artist">Related Artist</button>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="meta-data no-scrollbar" data-metadata></div>
+        </section>
+    </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.9/dist/js/splide.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html
