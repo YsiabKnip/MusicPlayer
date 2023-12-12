@@ -1,6 +1,6 @@
 
 
-const accessKey = '83d1d5de19mshc866c3b2bcc6b49p11a446jsnff576f6ad1dd';
+const accessKey = '62887a9977msh6d9f7db6857fc54p18f5e0jsn87163960ea8e';
 const geniusHost = 'genius-song-lyrics1.p.rapidapi.com';
 const spotifyHost = 'spotify23.p.rapidapi.com';
 
